@@ -1,1 +1,114 @@
-# Github-Search-Users-App
+# Github Search Users 
+
+Search Github Users is a project built using react. This Project searches user details like their profile, followers, following, gists, repos, skills etc. In this project Github API is used to get the data of the users. 
+
+It have three pages a login , home and an error page. Initially the user will be at login page where he/she can login/signup using Google/Twitter. After logging in, the user will be directed to the home page where initially there will be his/her github information and a search bar where he/she can search any github username and get details of the user . There will be a section containing the repo count, followers count, following count and gists count. There will be one piechart telling about the languages, one bar graph  telling about the repos and how many stars the repo have, a chart telling about stars per language and a bar graph telling about forked count of the repos. User will be directed to error page when he/she will type any incorrect page in the url of the website and there he/she will have option to go back home.
+
+## Styled Components
+
+[Styled-Components - Main Docs](https://styled-components.com/)
+
+```jsx
+import styled from "styled-components";
+
+const ReactComponent = () => {
+ // logic here
+ return <Wrapper>
+ {some content}
+ </Wrapper>
+}
+
+
+const Wrapper = styled.htmlElement`
+write your styles here
+`
+export default ReactComponent
+```
+
+## React Icons
+
+[React Icons - Main Docs](https://react-icons.github.io/react-icons/)
+
+```jsx
+import { FiUsers, FiUserPlus } from 'react-icons/fi';
+<FiUsers className='nameOfTheClass'> </FiUsers>;
+```
+
+## React Router Dom
+
+version used - "react-router-dom": "^5.2.0",
+
+- [react-router-dom - Main Docs](https://reactrouter.com/web/guides/quick-start)
+
+- <Switch> renders the first child <Route> that matches
+- A <Route path="*"> always matches
+
+## Gihthub API
+
+- [Root Endpoint](https://api.github.com)
+- [Get User](https://api.github.com/users/urvashi-code1255)
+- [Repos](https://api.github.com/users/urvashi-code1255/repos?per_page=100)
+- [Followers](https://api.github.com/users/urvashi-code1255/followers)
+- [Rate Limit](https://api.github.com/rate_limit)
+
+  For unauthenticated requests, the rate limit allows for up to 60 requests per hour. Unauthenticated requests are associated with the originating IP address, and not the user making requests.
+
+## Fusion Charts
+
+- [Fusion Charts - Main Docs](https://www.fusioncharts.com/)
+- [First React Chart](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react)
+- [List Of Charts](https://www.fusioncharts.com/dev/chart-guide/list-of-charts)
+- [Themes](https://www.fusioncharts.com/dev/themes/introduction-to-themes)
+
+## Auth0
+
+- [Auth0 - Main Docs](https://auth0.com/)
+
+- Create Application
+- Choose : Single Page Web Applications
+- Choose : React
+- Go to Settings Tab
+- Copy/Paste Domain, ClientID - can be public (or use .env)
+- Add Domain -
+  for now http://localhost:3000 (DON'T COPY PASTE FROM URL BAR)
+
+  - Allowed Callback URLs
+  - Allowed Logout URLs
+  - Allowed Web Origins
+  - SAVE CHANGES!!!!!!!!!!!!!!!
+
+- Connections
+  email,social
+
+- [React SDK Docs](https://auth0.com/docs/libraries/auth0-react)
+- [REACT SDK API Docs](https://auth0.github.io/auth0-react/)
+
+## Deployment
+
+[Netlify](https://www.netlify.com/)
+
+## Additional Info
+
+#### Redirects with react-router-dom
+
+In order for routing to work on netlify, redirects was added to the public folder
+
+- \_redirects file in public
+
+```
+
+/*    /index.html   200
+
+```
+
+[Redirects Blog Post](https://dev.to/dance2die/page-not-found-on-netlify-with-react-router-58mc)
+
+#### Warnings and create-react-app
+
+package.json
+
+```js
+"build": "CI= react-scripts build",
+```
+
+[create-react-app Warning Fix Blog Post](https://community.netlify.com/t/how-to-fix-build-failures-with-create-react-app-in-production/17752)
