@@ -112,3 +112,6 @@ package.json
 ```
 
 [create-react-app Warning Fix Blog Post](https://community.netlify.com/t/how-to-fix-build-failures-with-create-react-app-in-production/17752)
+
+## Want to Contribute?
+Just go thrugh the link given in the about of the repository and explore the website for now :)
