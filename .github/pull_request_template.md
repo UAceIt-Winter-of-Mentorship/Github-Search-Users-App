@@ -8,7 +8,7 @@ Closes: #number
 
 ## Types of changes
 
-*Put an [x] in the boxes that apply*
+*Put an `x` in the boxes that apply*
 
 - [ ] Bugfix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
@@ -18,7 +18,7 @@ Closes: #number
 
 ## Checklist
 
-*Put an [x] in the boxes that apply*
+*Put an `x` in the boxes that apply*
 
 - [ ] My code follows the style guidelines of this project
 - [ ] I have performed a self-review of my own code
